@@ -4,7 +4,7 @@ A cloud-native resume website built on AWS as part of the **Cloud Resume Challen
 
 ## 🌐 Live Demo
 
-**Website:** https://your-domain.com
+**Website:** https://d18xxtbyevhmrf.cloudfront.net/
 
 ---
 
@@ -176,4 +176,4 @@ Add screenshots of:
 
 - LinkedIn: https://www.linkedin.com/in/djibril-gueye-thiandoum-7a319571/
 - GitHub: https://github.com/dgthian
-- Website: https://your-domain.com
+- Website: https://d18xxtbyevhmrf.cloudfront.net/
