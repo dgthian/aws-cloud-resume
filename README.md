@@ -1,6 +1,7 @@
-# ☁️ AWS Cloud Resume Challenge
+# ☁️ AWS Cloud Resume
 
-A cloud-native resume website built on AWS as part of the **Cloud Resume Challenge**. This project demonstrates practical experience with AWS services, Infrastructure as Code, serverless development, and CI/CD.
+A cloud-native resume website built on AWS. 
+This project demonstrates practical experience with AWS services, Infrastructure as Code, serverless development, and CI/CD.
 
 ## 🌐 Live Demo
 
@@ -51,7 +52,7 @@ Amazon DynamoDB
 - Visitor count stored in Amazon DynamoDB
 - IAM least-privilege permissions
 - Infrastructure managed with Terraform
-- Automated deployment with GitHub Actions *(if applicable)*
+- Automated deployment with GitHub Actions 
 
 ---
 
@@ -63,7 +64,7 @@ Amazon DynamoDB
 - Amazon DynamoDB
 - AWS IAM
 - AWS Certificate Manager (ACM)
-- Amazon Route 53 *(if using a custom domain)*
+- Amazon Route 53
 
 ---
 
@@ -166,14 +167,6 @@ Add screenshots of:
 - Infrastructure as Code with Terraform
 - Frontend integration with serverless backend
 - Cloud deployment and troubleshooting
-
----
-
-## 📖 References
-
-- Cloud Resume Challenge
-- AWS Documentation
-- Terraform Documentation
 
 ---
 
