@@ -9,6 +9,13 @@ A cloud-native resume website built on AWS as part of the **Cloud Resume Challen
 ---
 
 ## 🏗️ Architecture
+<p align="center">
+  <a href="https://app.eraser.io/your-diagram-link">
+    <img src="docs/architecture.png" 
+         alt="AWS Cloud Resume Architecture" 
+         width="800"/>
+  </a>
+</p>
 
 ```
 Browser
