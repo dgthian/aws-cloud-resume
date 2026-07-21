@@ -11,7 +11,7 @@ This project demonstrates practical experience with AWS services, Infrastructure
 
 ## 🏗️ Architecture
 <p align="center">
-  <a href="https://app.eraser.io/your-diagram-link">
+  <a href="https://app.eraser.io/workspace/KAxULA2Y81OVgT8u0nYc">
     <img src="docs/architecture.png" 
          alt="AWS Cloud Resume Architecture" 
          width="800"/>
@@ -86,11 +86,10 @@ aws-cloud-resume/
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
-│   ├── script.js
-│   └── assets/
+│   └── script.js
 │
-├── backend/
-│   └── lambda_function.py
+├── lambda/
+│   └── func.py
 │
 ├── terraform/
 │   ├── main.tf
@@ -123,7 +122,7 @@ terraform apply
 ### Deploy Lambda
 
 ```bash
-zip lambda.zip lambda_function.py
+zip lambda.zip func.py
 
 aws lambda update-function-code \
     --function-name cloudResumeApi \
@@ -133,14 +132,14 @@ aws lambda update-function-code \
 ### Upload Website
 
 ```bash
-aws s3 sync frontend/ s3://YOUR_BUCKET_NAME
+aws s3 sync frontend/ s3://BUCKET_NAME
 ```
 
 ### Invalidate CloudFront Cache
 
 ```bash
 aws cloudfront create-invalidation \
-    --distribution-id YOUR_DISTRIBUTION_ID \
+    --distribution-id DISTRIBUTION_ID \
     --paths "/*"
 ```
 
