@@ -10,7 +10,7 @@
       "Condition": {
         "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
-          "token.actions.githubusercontent.com:sub": "repo:dgthian/aws-cloud-resume:ref:refs/heads/main"
+          "token.actions.githubusercontent.com:sub": "repo:dgthian@46373965/aws-cloud-resume@1306736680:ref:refs/heads/main"
         }
       }
     }
