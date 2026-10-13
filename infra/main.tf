@@ -1,7 +1,7 @@
-resource "aws_lambda_function" "myfunction" {
+resource "aws_lambda_function" "cloudResumeFunction" {
     filename         = data.archive_file.lambda_zip.output_path
     source_code_hash = data.archive_file.lambda_zip.output_base64sha256
-    function_name    = "myfunction"
+    function_name    = "cloudResumeFunction"
     role             = aws_iam_role.iam_for_lambda.arn
     handler          = "func.lambda_handler"
     runtime          = "python3.14"
@@ -57,6 +57,7 @@ resource "aws_iam_policy" "iam_policy_for_resume_project" {
 
         Action = [
           "dynamodb:GetItem",
+          "dynamodb:UpdateItem",
           "dynamodb:PutItem"
         ]
 
@@ -78,7 +79,7 @@ data "archive_file" "lambda_zip" {
 }
 
 resource "aws_lambda_function_url" "url1" {
-    function_name = aws_lambda_function.myfunction.function_name
+    function_name = aws_lambda_function.cloudResumeFunction.function_name
     authorization_type = "NONE"
 
     cors {
